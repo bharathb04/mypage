@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Skills from './Skills';
+import Intro from './Intro';
+class App extends Component {
+  
+  render(){
+  
+  const skill1 = {
+    skill: 'ReactJS',
+    desc: 'This webpage is created using React.',
+    github: 'https://github.com/bharathb04/project-app',
+    link: '#home'
+  }
 
-function App() {
+  const skill2 = {
+    skill: 'Python',
+    desc: 'Below link shows source of a python script.',
+    github: 'https://github.com/bharathb04/project-app',
+    link: '#home'
+  }
+
+  const skill3 = {
+    skill: 'Docker',
+    desc: 'This React application was deployed using Docker.',
+    github: 'https://github.com/bharathb04/project-app',
+    link: '#home'
+  }
+
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Intro />
+      <div className="board-row">
+      <Skills tech={skill1}/> <Skills tech={skill2}/>
+      </div>
+      <div className="board-row">
+      <Skills tech={skill3}/> 
+      </div>
+
+      <div className="bb8-fun">
+          <img src='/bb8.jpg' alt='BB8_Image' height='150' width='115'></img>
+      </div>
     </div>
+
+  
   );
+  }
 }
 
 export default App;
