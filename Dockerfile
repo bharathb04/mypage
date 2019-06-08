@@ -1,5 +1,5 @@
 FROM node:10.16.0-slim
-EXPOSE 3000
+EXPOSE 3001
 # set working directory
 WORKDIR /app
 

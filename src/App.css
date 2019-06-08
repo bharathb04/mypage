@@ -1,7 +1,14 @@
 .Intro {
-
+ 
   margin-left: 0.5rem;
 }
+
+.Test {
+ 
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 
 
 .App-header {
@@ -29,8 +36,16 @@
 }
 
 
-.card:hover {
+.card-skill:hover {
 	background-color: #9fc9f3;
+  text-decoration: none;
+  transition: 0.4s;
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05)
+}
+
+.card-dbskill:hover {
+	background-color: #f09286;
   text-decoration: none;
   transition: 0.4s;
   -webkit-transform: scale(1.05);

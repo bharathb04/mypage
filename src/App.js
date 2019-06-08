@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Skills from './Skills';
+import DBSkill from './DBSkill';
 import Intro from './Intro';
+
 class App extends Component {
   
   render(){
@@ -9,14 +11,14 @@ class App extends Component {
   const skill1 = {
     skill: 'ReactJS',
     desc: 'This webpage is created using React.',
-    github: 'https://github.com/bharathb04/project-app',
+    github: 'https://github.com/bharathb04/mypage',
     link: '#home'
   }
 
   const skill2 = {
     skill: 'Python',
     desc: 'Below link shows source of a python script.',
-    github: 'https://github.com/bharathb04/project-app',
+    github: 'https://github.com/bharathb04/Automation',
     link: '#home'
   }
 
@@ -26,6 +28,14 @@ class App extends Component {
     github: 'https://github.com/bharathb04/project-app',
     link: '#home'
   }
+
+  const skill4 = {
+    skill: 'PostgreSQL',
+    desc: 'Click Below Link to interact with SQL DB.',
+    github: '/test',
+    link: '#home'
+  }
+
 
 
   return (
@@ -38,6 +48,10 @@ class App extends Component {
       <div className="board-row">
       <Skills tech={skill3}/> 
       </div>
+      <div>
+      <DBSkill tech={skill4}/> 
+      </div>
+
 
       <div className="bb8-fun">
           <img src='/bb8.jpg' alt='BB8_Image' height='150' width='115'></img>

@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { CSSTransition } from 'react-transition-group';
 
 
-class Skills extends Component {
+class DBSkill extends Component {
 
     constructor(props) {
         super(props);
@@ -13,14 +13,13 @@ class Skills extends Component {
         }
     }
 
-
 render () {
 
     const { appearHome } = this.state;
 
     return (
 
-    <div className="Skills">
+    <div className="DBSkill">
 
     <CSSTransition
     in={appearHome}
@@ -28,7 +27,7 @@ render () {
     timeout={3000}
     classNames="fade">
 
-    <Card style={{ width: '18rem', marginLeft: '0.75rem', marginTop: '0.5rem' }} className="card-skill">
+    <Card style={{ width: '18rem', marginLeft: '0.75rem', marginTop: '0.5rem' }} className="card-dbskill">
         <Card.Body>
         <Card.Title>{this.props.tech.skill}</Card.Title>
         {/*<Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>*/}
@@ -36,7 +35,7 @@ render () {
         {this.props.tech.desc}
         </Card.Text>
         {/*<Card.Link href="">Card Link</Card.Link>*/}
-       <Card.Link href={this.props.tech.github} target="_blank">Source</Card.Link>
+       <Card.Link href={this.props.tech.github}>Test {this.props.tech.skill}</Card.Link>
        </Card.Body>
     </Card>
 
@@ -52,4 +51,4 @@ render () {
 
 }
 
-export default Skills;
+export default DBSkill;
