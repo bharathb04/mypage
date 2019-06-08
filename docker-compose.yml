@@ -1,0 +1,7 @@
+version: '3.5'
+services:
+   web:
+     image: node:mypage
+     ports:
+       - "80:3000"
+     
