@@ -32,7 +32,7 @@ class Test extends Component {
         occupation: this.refs.occupation.value
     };
 
-    var request = new Request('http://localhost:3000/api/new-cust', {
+    var request = new Request('http://www.bharathb04.com:3000/api/new-cust', {
         method: 'POST',
         headers: new Headers({'Content-Type': 'application/json'}),
         body: JSON.stringify(data)
@@ -62,7 +62,7 @@ class Test extends Component {
         cust_id: this.refs.cust_id.value,
     };
 
-    var request = new Request('http://localhost:3000/api/del-cust/' + data.cust_id, {
+    var request = new Request('http://www.bharathb04.com:3000/api/del-cust/' + data.cust_id, {
         method: 'DELETE',
         headers: new Headers({'Content-Type': 'application/json'}),
         body: JSON.stringify(data)
@@ -88,7 +88,7 @@ class Test extends Component {
     //event.preventDefault();
     var that = this;
     
-    var request = new Request('http://localhost:3000/api/sel-cust', {
+    var request = new Request('http://www.bharathb04.com:3000/api/sel-cust', {
         method: 'GET',
         headers: new Headers({'Content-Type': 'application'}),
     });
