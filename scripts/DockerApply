@@ -1,0 +1,3 @@
+#!/bin/bash
+docker-compose -f docker-compose.yml up --scale web=1 -d --build
+docker image prune -f

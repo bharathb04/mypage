@@ -25,7 +25,7 @@ class App extends Component {
   const skill3 = {
     skill: 'Docker',
     desc: 'This React application was deployed using Docker.',
-    github: 'https://github.com/bharathb04/project-app',
+    github: 'https://github.com/bharathb04/mypage',
     link: '#home'
   }
 
@@ -36,6 +36,13 @@ class App extends Component {
     link: '#home'
   }
 
+  const skill5 = {
+    skill: 'AWS EC2',
+    desc: 'This webpage is hosted in AWS EC2 instance.',
+    github: '/',
+    link: '#home'
+  }
+
 
 
   return (
@@ -43,11 +50,11 @@ class App extends Component {
     <div className="App">
       <Intro />
       <div className="board-row">
-      <Skills tech={skill1}/> <Skills tech={skill2}/>
+      <Skills tech={skill1}/> <Skills tech={skill2}/> <Skills tech={skill3}/>
       </div>
       <div className="board-row">
-      <Skills tech={skill3}/> 
-      </div>
+      <Skills tech={skill5}/> 
+      </div> 
       <div>
       <DBSkill tech={skill4}/> 
       </div>

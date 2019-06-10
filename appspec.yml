@@ -3,3 +3,8 @@
  files:
   - source: /
     destination: /home/ec2-user/mypage
+ hooks:
+  ApplicationStart:
+    - location: scripts/DockerApply
+      timeout: 300
+      runas: root
