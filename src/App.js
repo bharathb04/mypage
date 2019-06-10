@@ -43,6 +43,12 @@ class App extends Component {
     link: '#home'
   }
 
+  const skill6 = {
+    skill: 'Nodejs API',
+    desc: 'Webpage interacts with Nodejs API.',
+    github: 'https://github.com/bharathb04/pg-api',
+    link: '#home'
+  }
 
 
   return (
@@ -50,7 +56,7 @@ class App extends Component {
     <div className="App">
       <Intro />
       <div className="board-row">
-      <Skills tech={skill1}/> <Skills tech={skill2}/> <Skills tech={skill3}/>
+      <Skills tech={skill1}/> <Skills tech={skill2}/> <Skills tech={skill3}/> <Skills tech={skill6}/>
       </div>
       <div className="board-row">
       <Skills tech={skill5}/> 
