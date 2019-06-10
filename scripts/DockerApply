@@ -1,5 +1,4 @@
 #!/bin/bash
-pwd
 export PATH="$PATH:/usr/local/bin/"
-docker-compose -f docker-compose.yml up --scale web=1 -d --build
+cd /home/ec2-user/mypage;docker-compose -f docker-compose.yml up --scale web=1 -d --build
 docker image prune -f
