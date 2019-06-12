@@ -39,7 +39,7 @@ class App extends Component {
   const skill5 = {
     skill: 'AWS EC2',
     desc: 'This webpage is hosted in AWS EC2 instance.',
-    github: '/',
+    github: 'https://aws.amazon.com/console/',
     link: '#home'
   }
 
@@ -50,6 +50,26 @@ class App extends Component {
     link: '#home'
   }
 
+  const skill7 = {
+    skill: 'AWS Route53',
+    desc: 'The web page is hosted using AWS.',
+    github: 'https://aws.amazon.com/console/',
+    link: '#home'
+  }
+
+  const skill8 = {
+    skill: 'AWS CodeDeploy',
+    desc: 'The deployment is fully automated - CI/CD.',
+    github: 'https://aws.amazon.com/console/',
+    link: '#home'
+  }
+
+  const skill9 = {
+    skill: 'AWS RDS',
+    desc: 'The PostgreSQL database is hosted in RDS instance.',
+    github: 'https://aws.amazon.com/console/',
+    link: '#home'
+  }
 
   return (
 
@@ -59,7 +79,7 @@ class App extends Component {
       <Skills tech={skill1}/> <Skills tech={skill2}/> <Skills tech={skill3}/> <Skills tech={skill6}/>
       </div>
       <div className="board-row">
-      <Skills tech={skill5}/> 
+      <Skills tech={skill5}/> <Skills tech={skill7}/> <Skills tech={skill8}/> <Skills tech={skill9}/> 
       </div> 
       <div>
       <DBSkill tech={skill4}/> 

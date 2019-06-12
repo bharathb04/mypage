@@ -31,7 +31,7 @@ class Intro extends Component {
 
           I am Bharath, I have been in IT industry for almost 9 years. 
           <br></br>
-          Please refer my latest resume <a href="https://s3-ap-southeast-2.amazonaws.com/s3bharath1/Bharath_Resume.docx">here</a> from a S3 Bucket.
+          Please refer my latest resume <a href="https://s3bharath1.s3-ap-southeast-2.amazonaws.com/Bharath_B.docx">here</a> from a S3 Bucket.
         </p>
 
         <p className="Intro">
