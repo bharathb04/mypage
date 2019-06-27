@@ -31,9 +31,10 @@ class Intro extends Component {
 
           I am Bharath, I have been in IT industry for almost 9 years. 
           <br></br>
-          Please refer my latest resume <a href="https://s3bharath1.s3-ap-southeast-2.amazonaws.com/Bharath_B.docx">here</a> from a S3 Bucket.
+          Please refer my latest resume <a href="https://s3bharath1.s3-ap-southeast-2.amazonaws.com/Bharath_B.pdf">here</a> from a S3 Bucket.
+          I have full work rights in Australia - I hold Permanent Resident VISA 190.
         </p>
-
+        
         <p className="Intro">
           Each of the skills listed below make use of single react component. 
         </p>
