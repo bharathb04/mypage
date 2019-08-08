@@ -5,4 +5,4 @@ services:
        dockerfile: Dockerfile
        context: .
      ports:
-       - "443:3000"
+       - "80:3000"
