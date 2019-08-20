@@ -76,11 +76,11 @@ class App extends Component {
     <div className="App">
       <Intro />
       <div className="board-row">
-      <Skills tech={skill1}/> <Skills tech={skill2}/> <Skills tech={skill3}/> <Skills tech={skill6}/>
-      </div>
-      <div className="board-row">
       <Skills tech={skill5}/> <Skills tech={skill7}/> <Skills tech={skill8}/> <Skills tech={skill9}/> 
       </div> 
+      <div className="board-row">
+      <Skills tech={skill1}/> <Skills tech={skill2}/> <Skills tech={skill3}/> <Skills tech={skill6}/>
+      </div>
       <div>
       <DBSkill tech={skill4}/> 
       </div>
